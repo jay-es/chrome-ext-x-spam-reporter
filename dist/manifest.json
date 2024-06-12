@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "chrome-ext-x-spam-reporter",
+  "version": "0.1.0",
+  "description": "",
+  "permissions": ["contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
