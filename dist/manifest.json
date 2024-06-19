@@ -3,6 +3,9 @@
   "name": "chrome-ext-x-spam-reporter",
   "version": "0.1.0",
   "description": "",
+  "icons": {
+    "48": "icon-48.png"
+  },
   "permissions": ["contextMenus"],
   "background": {
     "service_worker": "background.js"

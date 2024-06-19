@@ -8,3 +8,7 @@
 - `パッケージされていない拡張機能を読み込む` をクリック
 - `dist` ディレクトリを選択
 - 完了
+
+## assets
+
+icon: https://www.svgrepo.com/svg/392222/ban-eye-view-vision-alert-notification
