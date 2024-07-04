@@ -16,7 +16,7 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === id) {
-    chrome.tabs.sendMessage(tab?.id ?? 0, "chrome-ext-x-spam-reporter");
+  if (info.menuItemId === id && tab?.id !== undefined) {
+    chrome.tabs.sendMessage(tab.id, "chrome-ext-x-spam-reporter");
   }
 });
